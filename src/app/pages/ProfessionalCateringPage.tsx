@@ -1,3 +1,4 @@
+import { PageHero } from '../components/PageHero';
 import { ProfessionalCatering as ProfessionalCateringComponent } from '../components/ProfessionalCatering';
 import { ChefHat, Award, Users, Clock } from 'lucide-react';
 
@@ -5,21 +6,21 @@ export function ProfessionalCateringPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-orange-50 to-white py-24">
-        <div className="max-w-[1440px] mx-auto px-8">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-5xl font-bold text-gray-900 mb-6">
-              Professional Catering Staff
-            </h1>
-            <p className="text-xl text-gray-600 mb-8">
-              Elite chefs and catering professionals for events, fine dining, and corporate functions across London and nationwide.
-            </p>
-            <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all shadow-lg shadow-orange-500/30 font-semibold">
-              Book Catering Staff
-            </button>
-          </div>
+      <PageHero
+        title="PROFESSIONAL CATERING"
+        subtitle="FILL YOUR MENU WITH FLAVOUR"
+        backgroundImage="https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=2070&auto=format&fit=crop"
+        align="left"
+      >
+        <div className="max-w-2xl">
+          <p className="text-xl text-gray-200 mb-8 leading-relaxed">
+            Elite chefs and catering professionals for events, fine dining, and corporate functions across London and nationwide.
+          </p>
+          <button className="bg-orange-600 text-white px-8 py-4 rounded-lg hover:bg-orange-700 transition-all shadow-lg font-bold tracking-wide">
+            BOOK CATERING STAFF
+          </button>
         </div>
-      </section>
+      </PageHero>
 
       {/* Features */}
       <section className="py-20">

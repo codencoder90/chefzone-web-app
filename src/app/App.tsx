@@ -10,6 +10,8 @@ import { ProfessionalCateringPage } from './pages/ProfessionalCateringPage';
 import { PermanentJobsPage } from './pages/PermanentJobsPage';
 import { ReferBusinessPage } from './pages/ReferBusinessPage';
 import { ReferFriendPage } from './pages/ReferFriendPage';
+import { AboutPage } from './pages/AboutPage';
+import { ContactPage } from './pages/ContactPage';
 
 export default function App() {
   return (
@@ -26,6 +28,8 @@ export default function App() {
           <Route path="/permanent-jobs" element={<PermanentJobsPage />} />
           <Route path="/refer-business" element={<ReferBusinessPage />} />
           <Route path="/refer-friend" element={<ReferFriendPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
         <Footer />
       </div>

@@ -1,5 +1,6 @@
 import { ChefHat, Facebook, Instagram, Twitter, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Newsletter } from './Newsletter';
 
 export function Footer() {
   const footerLinks = {
@@ -20,10 +21,10 @@ export function Footer() {
       { label: 'Request Quote', path: '/hiring' }
     ],
     'Company': [
-      { label: 'About Us', path: '/' },
+      { label: 'About Us', path: '/about' },
       { label: 'News & Blog', path: '/' },
-      { label: 'Contact Us', path: '/' },
-      { label: 'Locations', path: '/' },
+      { label: 'Contact Us', path: '/contact' },
+      { label: 'Locations', path: '/contact' },
       { label: 'Careers', path: '/' },
       { label: 'Press Kit', path: '/' }
     ],
@@ -42,8 +43,11 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-black text-white py-16 lg:py-24">
-      <div className="max-w-[1440px] mx-auto px-6 md:px-8">
+    <footer className="bg-black text-white pt-8 pb-16 lg:pb-24">
+      <div className="max-w-[1440px] mx-auto">
+        <Newsletter />
+      </div>
+      <div className="max-w-[1440px] mx-auto px-6 md:px-8 mt-16">
         {/* Main Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 border-b border-white/10 pb-16">
 

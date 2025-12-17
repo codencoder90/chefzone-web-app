@@ -1,5 +1,5 @@
 
-  # High-Fidelity Figma Design
+  # Chef Zone Web App
 
   This is a code bundle for High-Fidelity Figma Design. The original project is available at https://www.figma.com/design/jmKIfeA3JTIwxYEjxBYORB/High-Fidelity-Figma-Design.
 
